@@ -1,0 +1,124 @@
+.wrapper{
+    /*fonts - google fonts monserat*/
+    font-family: 'Poppins', 'Montserrat', sans-serif; 
+    
+    flex: 1 1 auto;
+    
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+
+    h4{
+        max-width: 100%;
+        color: #AFB2C1;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom: 1px;
+    }
+
+        .alertBlock{
+            max-width: 100%;
+            height: 50px;
+            padding: 10px;
+            background: #3DBDB6;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            
+            .checkmark{
+                height: 24px;
+                width: 24px;
+                margin-left: 15px;
+            }
+            .alertText{
+                margin-left: 20px;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 25px;
+                letter-spacing: -0.01em;
+                color: #FFFFFF;
+            }
+        }
+    }      
+    
+    .formWrapper{
+        max-width: 100%;
+        padding: 20px 20px 30px 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 6px #EAEAEA;
+        border-radius: 7px;
+        margin-top: 10px;
+        margin-left: 28px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 6px #EAEAEA;
+        border-radius: 7px;
+        margin-top: 22px;
+        margin-left: 28px;
+        margin-bottom: 90px;
+    }
+    .birthdate{
+    }
+
+    button{
+      width: 150px;
+      cursor: pointer;
+    .secondForm{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #F2F2F3;
+      border-radius: 5px;
+      padding: 15px 20px 8px 25px;
+      margin-top: 20px;
+      
+      .radioWrapper{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+        color: #48465B;
+        padding-bottom: 15px;
+
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        .radioInput{
+          display: none;
+        }
+        
+        .radioRadio{
+          width: 1.2em;
+          height: 1.2em;
+          border: 1px solid #BEC0CF;
+          box-sizing: border-box;
+          border-radius: 50%;
+          margin-right: 10px;
+          box-sizing: border-box;
+        }
+        .radioRadio::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: #fff;
+          border-radius: 50%;
+          // box-shadow: inset 0 0 0 3px #00005c;
+          border: 5px solid #4E64DD;
+          box-sizing: border-box;
+          transform: scale(0);
+          transition: transform 0.3s;
+        }
+        .radioInput:checked + .radioRadio::after{
+          transform: scale(1);
+        }
+      }
+    }
+}
+
